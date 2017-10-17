@@ -32,16 +32,23 @@ class CMMC_LED
 
       void init();
       void toggle();
+
+      void set(uint8_t status) {
+        digitalWrite(this->_led, status);
+      };
+
       void low() {
-        digitalWrite(this->_led, LOW);
+        this->set(LOW);
       };
+
       void high() {
-        digitalWrite(this->_led, HIGH);
+        this->set(HIGH);
       };
+      
       void debug(cmmc_debug_cb_t);
     private:
       cmmc_debug_cb_t _user_debug_cb;
-      bool _led_state = LOW;
+      uint8_t _led_state = LOW;
       int _led;
 
 };

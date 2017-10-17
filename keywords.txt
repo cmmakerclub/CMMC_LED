@@ -10,9 +10,10 @@ CMMC_LED					KEYWORD1
 # Methods and Functions (KEYWORD2)
 #######################################
 init 					KEYWORD2
-toggle 					KEYWORD2
+toggle				KEYWORD2
 low 					KEYWORD2
 high 					KEYWORD2
+set 					KEYWORD2
 
 #######################################
 # Instances (KEYWORD2)
