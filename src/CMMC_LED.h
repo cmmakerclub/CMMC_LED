@@ -32,6 +32,12 @@ class CMMC_LED
 
       void init();
       void toggle();
+      void low() {
+        digitalWrite(this->_led, LOW);
+      };
+      void high() {
+        digitalWrite(this->_led, HIGH);
+      };
       void debug(cmmc_debug_cb_t);
     private:
       cmmc_debug_cb_t _user_debug_cb;
