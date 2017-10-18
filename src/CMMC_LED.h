@@ -1,19 +1,9 @@
 #ifndef CMMC_LED_H
 #define CMMC_LED_H
-
 #include <Arduino.h>
 
-
 #ifndef CMMC_NO_ALIAS
-  #define CMMC_LED CMMC_LED
-#endif
-
-#ifdef ESP8266
-  extern "C" {
-    #include "user_interface.h"
-  }
-  #include "ESP8266WiFi.h"
-  #include <functional>
+  #define CMMC_LED LED
 #endif
 
 typedef void (*cmmc_debug_cb_t)(const char* message);
@@ -53,4 +43,4 @@ class CMMC_LED
 
 };
 
-#endif //CMMC_LED_H
+#endif //CMMC_LED_H 
