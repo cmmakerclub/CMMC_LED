@@ -7,9 +7,10 @@ CMMC_LED is designed for controller library that you can wrap pin number and pin
 Features
 --------
 * Set default led state  when create led object
-* `toggle` LED state
-* `set` LED state
-* easy control `low` and `high` method
+* `toggle()` LED state
+* `set()` LED state
+* easy control `low()` and `high()` method
+* MIT License
 
 Usage
 --------
