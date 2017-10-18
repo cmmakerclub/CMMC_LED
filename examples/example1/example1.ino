@@ -1,20 +1,20 @@
 #include <Arduino.h>
 #include <CMMC_LED.h>
 
-CMMC_LED instance1(2, LOW);
-CMMC_LED instance2(3, LOW);
-CMMC_LED instance3(4, LOW);
+CMMC_LED led1(1, LOW);
+CMMC_LED led2(2, LOW);
+CMMC_LED led3(3, LOW);
 
 void setup()
 {
-  instance1.init();
-  instance2.init();
-  instance3.init();
+  led1.init();
+  led2.init();
+  led3.init();
 }
 
 void loop()
 {
-  instance1.toggle();
-  instance2.toggle();
-  instance3.toggle();
+  led1.toggle();
+  led2.toggle();
+  led3.toggle();
 }
