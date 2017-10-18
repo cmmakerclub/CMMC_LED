@@ -15,11 +15,16 @@ Features
 Usage
 --------
 
+Initializing:
+
 	CMMC_LED led(2, LOW);
-	
 	led.init();
+	
+Controlling:
 	
 	led.low();
 	led.high();
-	
+
+Toggle:
+
 	led.toggle()
